@@ -4,7 +4,7 @@ docker build -t mynginx .
 
 运行
 //进入命令行模式（mynginx是镜像名称）
-docker run -it mynginx sh
+docker run -it --rm mynginx sh
 //进入正在运行的容器（nginx是容器名称）
 docker exec -it nginx sh
 //直接运行（mynginx是镜像名称）

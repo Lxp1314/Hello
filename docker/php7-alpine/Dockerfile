@@ -27,5 +27,5 @@ COPY php.ini /etc/php7/php.ini
 
 EXPOSE 9000
 
-CMD ["php-fpm"]
+CMD ["php-fpm7"]
 
