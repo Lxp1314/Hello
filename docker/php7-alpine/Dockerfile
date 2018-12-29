@@ -23,6 +23,10 @@ RUN curl -s http://getcomposer.org/installer | php && mv composer.phar /usr/loca
 # 配置国内composer镜像
 RUN composer config -g repo.packagist composer https://packagist.phpcomposer.com
 
+#安装supervisor
+RUN apk add supervisor
+RUN mkdir /etc/supervisor.d
+
 COPY php.ini /etc/php7/php.ini
 
 EXPOSE 9000
